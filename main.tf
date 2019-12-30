@@ -24,5 +24,5 @@ output "Instance" {
     }
 
  output "workspace" {
-      vaule = "SNOW ticket ${terraform.workspace}"
+      vaule = "SNOW ticket number"
  }   
