@@ -23,4 +23,3 @@ output "Instance" {
     	value = "${local.size[var.size].instance}"
     }
 
- output "workspace" 
