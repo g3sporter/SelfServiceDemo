@@ -23,6 +23,4 @@ output "Instance" {
     	value = "${local.size[var.size].instance}"
     }
 
- output "workspace" {
-      vaule = "SNOW ticket number"
- }   
+ output "workspace" 
