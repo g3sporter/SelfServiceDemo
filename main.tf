@@ -35,9 +35,11 @@ output "region" {
 output "ami" {
   value = "${local.instance_size[var.instance_size].ami}"
 }
-
-module "aws_main" {
-  source               = "./aws"
+//--------------------------------------------------------------------
+// Modules
+module "ssd_ec2" {
+  source  = "app.terraform.io/BryansWorld/ssdEC2/aws"
+  version = "0.0.1"
   instance_type        = "${local.instance_size[var.instance_size].instance_type}"
   region               = "${local.instance_size[var.instance_size].region}"
   ami                  = "${local.instance_size[var.instance_size].ami}"
